@@ -1,32 +1,33 @@
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
 .calculator-container {
   display: grid;
-  min-height: 5vh;
-  margin: 4rem;
+  min-height: 4vh;
+  margin: 2rem;
   margin-top: 5px;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: minmax(120px, auto) 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: minmax(80px, auto) repeat(5, 80px);
   grid-gap: 5px 5px;
 }
 
 .calculator {
   background-color: darkgray;
-  height: 70vh;
+  height: 80vh;
   border: 2px solid black;
-  width: 70vh;
+  width: 80vh;
   margin-left: 450px;
 }
 
 .button {
+  font-weight: bold;
   color: black;
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   padding: 1rem;
   background-color: white;
@@ -41,8 +42,11 @@ body {
 .button-display {
   grid-row: 1;
   grid-column: 1/5;
-  font-size: 2rem;
-  text-align: right;
+  font-size: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
   color: black;
   background-color: lightsteelblue;
   border: 2px solid black;
