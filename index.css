@@ -1,12 +1,11 @@
 body {
   background: white;
-  font-family: "Montserrat", sans-serif;
 }
 
 .container {
   background: grey;
   width: 340px;
-  height: 550px;
+  height: 500px;
   border-radius: 0.5em;
   margin: 0 auto;
   padding: 32px 16px;
@@ -17,15 +16,14 @@ body {
 
 .container .display {
   width: 100%;
-  height: 150px;
+  height: 120px;
   grid-row: 1;
   grid-column: 1/5;
-  background-color: limegreen;
+  background: limegreen;
 }
 
-.container .display p {
-  font-size: 40pt;
-  overflow-y: auto;
+.display-box {
+  font-size: 80px;
   text-align: right;
 }
 
@@ -37,11 +35,11 @@ body {
 }
 
 .container .buttons .button,
-.container .buttons .num-button {
+.num-button .operator {
   cursor: grab;
   text-align: center;
   width: 60px;
-  font-size: 20px;
+  font-size: 200px;
   height: 60px;
   display: grid;
   place-content: center;
@@ -53,15 +51,48 @@ body {
   color: limegreen;
 }
 
-.action-btn {
-  color: white;
-  font-weight: bold;
+.operator:hover {
+  color: limegreen;
 }
 
-.calc-action-btn {
+#equals:hover {
+  color: limegreen;
+}
+
+.num-button:hover {
+  color: limegreen;
+}
+
+.num-button {
   color: black;
   font-size: 20px;
   font-weight: bold;
+  border: 2px solid black;
+  background-color: white;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+}
+
+.operator {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: white;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+}
+
+#equals {
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
 }
 
 /*# sourceMappingURL=index.css.map */
